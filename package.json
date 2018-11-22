@@ -1,0 +1,23 @@
+{
+  "name": "myJustExpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "appUse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcherven/myJustExpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcherven/myJustExpress/issues"
+  },
+  "homepage": "https://github.com/jcherven/myJustExpress#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
