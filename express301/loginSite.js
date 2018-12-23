@@ -72,6 +72,18 @@ app.get('/story/:storyId/:link', (req, res, next) => {
     res.send(`<h1>Story ${req.params.storyId} - ${req.params.link}</h1>`)
 });
 
+app.get('/statement', (req, res, next) => {
+    // res.sendFile(path.join(__dirname, 'userStatements/BankStatementChequing.png'));
+    res.download(path.join(__dirname, 'userStatements/BankStatementChequing.png'), 'JimsStatement.png', (error) => {
+        if (error) {
+            if (!res.headerSent) {
+                res.redirect('/download/error');
+            }
+        }
+    });
+
+});
+
 app.get('/logout', (req, res, next) => {
     res.clearCookie('username');
     res.redirect('/login');
