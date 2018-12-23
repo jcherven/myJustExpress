@@ -17,4 +17,8 @@ app.get('/', (req, res, next) => {
     res.send("SAN CHECK");
 });
 
+app.get('/login', (req, res, next) => {
+    res.render('login');
+});
+
 app.listen(3000);
