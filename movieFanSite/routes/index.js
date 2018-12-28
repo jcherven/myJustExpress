@@ -19,7 +19,6 @@ router.get('/', function(req, res, next) {
         // console.log(error);
         // console.log("============ RESPONSE ============")
         // console.log(response);
-        console.log(movieData);
         const parsedData = JSON.parse(movieData);
         res.render('index', {
             parsedData: parsedData.results
